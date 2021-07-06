@@ -1,0 +1,89 @@
+/* dark.css
+The default theme. Use this as a template for creating new ones */
+
+/* Class role colours */
+.job-Tank .dps, .job-Tank .name, #header-template .job-Tank { color: #21B0E9; }
+.job-Heal .dps, .job-Heal .name, #header-template .job-Heal { color: #10C080; }
+.job-Dps  .dps, .job-Dps  .name, #header-template .job-Dps  { color: #D33C30; }
+.job-Tank .bar { background: linear-gradient(to right, rgb(71, 141, 247), rgb(86, 164, 206)); }
+.job-Heal .bar { background: linear-gradient(to right, #008558, rgb(30, 177, 60)); }
+.job-Dps  .bar { background: linear-gradient(to right, #8F1F16, #CC3333); }
+/* Default colurs used for other roles (such as Chocobos) */
+.dps, .name, .bar { color: #AAA; }
+
+/* 'YOU' colour used for your character */
+.player {
+    color: gold !important;
+}
+
+/* 'No data' state and header background colour */
+#overlay.blank {
+    color: #FFF;
+    background: rgba(28, 32, 35, 0.87);
+}
+
+/* Border around the parser */
+ol {
+    border: 1px solid #2d2d30;
+}
+
+/* Background colour for the main parser body */
+#overlay #combatant-template {
+    background: rgba(31, 31, 31, 0.77);
+}
+
+/* Header text colours */
+.header-top {
+    color: #FFF;
+}
+.header-top .header-stats, .header-bottom .max-hit, .header-bottom .max-hit-val {
+    color: #CDE8FF;
+}
+.title-prefix {
+    color: #D7BA7D;
+}
+#header-template .job- { 
+    color: #AAA;
+}
+.header-bottom .encounter-time {
+    color: #2994F7;
+}
+
+/* Non-DPS stat text colour */
+.stats {
+    color: #CDE8FF;
+}
+
+/* Stat title text colour */
+.stat-prefix {
+    color: #D7BA7D;
+}
+
+/* Death >0 colour */
+.died, .died ~ .stat-prefix {
+    color: #EE3E34 !important;
+}
+
+/* Collapse indicator image */
+.expand {
+    background-image: url('../../images/icons/collapse.png');
+}
+/* Expand indicator image */
+.more-collapsed .expand {
+    background-image: url('../../images/icons/expand.png');
+}
+
+/* Skill name text colour in the expanded stats */
+#more-details .max-hit {
+    color: rgba(205, 232, 255, 0.666);
+}
+
+/* Separator border when expanded */
+#more-details {
+    border-bottom: 1px dashed rgba(66, 65, 65, 0.6);
+}
+
+/* Context menu text colour */
+.menu {
+    color: #FFF;
+}
