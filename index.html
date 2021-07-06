@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/core.css">
+
+  <script src="https://ngld.github.io/OverlayPlugin/assets/shared/common.min.js"></script>
+  <script src="lib/jquery-3.4.1.min.js"></script>
+  <script src="js/debug.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/util.js"></script>
+  <script src="js/expandControl.js"></script>
+  <script src="js/combatant.js"></script>
+  <script src="js/classes.js"></script>
+  <script src="js/core.js"></script>
+</head>
+
+<body>
+  <div id="header-template">
+    <div class="header-top">
+      <span class="encounter-name"></span>
+      <span class="header-stats">
+        <span class="title-prefix">rDps </span><span class="encounter-dps"></span>
+        <span class="title-prefix">Deaths </span><span class="encounter-death"></span>
+      </span>
+    </div>
+    <div class="header-bottom">
+      <span class="encounter-time"></span>
+      <span class="max-hit"></span>
+      <span class="max-hit-val"></span>
+    </div>
+  </div>
+
+  <div id="combatant-template" class="more-collapsed">
+    <span class="dps"></span>
+    <span class="job-icon"></span>
+    <div class="details">
+      <div class="top">
+        <span class="name"></span>
+        <div class="top-right">
+          <span class="stat-prefix">C: </span><span class="stats crit"></span>
+          <span class="stat-prefix">DH: </span><span class="stats direct"></span>
+          <span class="stat-prefix">CDH: </span><span class="stats crit-direct"></span>
+          <span class="stat-prefix">Died: </span><span class="stats death"></span>
+          <span class="expand"></span>
+        </div>
+      </div>
+      <div class="bottom">
+        <span class="bar"></span>
+      </div>
+    </div>
+    <div id="more-details">
+      <div class="more-details-right">
+        <span class="stat-prefix">Heal: </span><span class="stats heal"></span>
+        <span class="stat-prefix">Overheal: </span><span class="stats overheal"></span>
+        <span class="stat-prefix">Max Hit: </span><span class="stats max-hit-val"></span><span class="stats max-hit"></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu" id="context-menu">
+    <ul class="menu-options">
+      <li class="menu-option" id="end-encounter">End Encounter</li>
+      <li class="menu-option" id="clear-encounter">Clear Encounter</li>
+    </ul>
+  </div>
+
+  <ol id="overlay" class="blank">
+    <li>No data.</li>
+  </ol>
+</body>
+</html>
