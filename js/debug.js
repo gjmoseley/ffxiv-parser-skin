@@ -430,7 +430,7 @@ var debug_event = {
             "overHeal": "234443",
             "damageShield": "65832",
             "absorbHeal": "0",
-            "JobOrName": "Ast"
+            "JobOrName": "Sge"
         },
         "Limit Break": {
             "n": "\n",

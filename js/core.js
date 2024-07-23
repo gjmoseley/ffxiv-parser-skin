@@ -30,7 +30,7 @@
     let overlay = $("#overlay");
     overlay.html("<li>No data.</li>");
     overlay.addClass("blank");
-    EXPANDED.Reset();
+    window.ExpandControl.Reset();
   };
 
   var SetupHeader = (header, encounter, bestHitPlayer) => {
@@ -63,6 +63,9 @@
       ResetOverlay();
       return;
     }
+
+    if (e.isActive == "false")
+      return;
 
     let encounter = e.Encounter;
     let combatants = e.Combatant;
@@ -114,8 +117,8 @@
       row.find(".dps").text(player.getFormattedDps());
       row.find(".job-icon").html(player.icon);
       row.find(".bar").css('width', player.getDpsPercentage(topDps) + "%");
-      row.find(".expand").bind("click", () => { EXPANDED.Toggle(row, combatant.name); });
-      if (EXPANDED.IsExpanded(combatant.name))
+      row.find(".expand").bind("click", () => { window.ExpandControl.Toggle(row, combatant.name); });
+      if (window.ExpandControl.IsExpanded(combatant.name))
         row.removeClass("more-collapsed");
 
       // Basic Stats
@@ -226,6 +229,8 @@
       rel: 'stylesheet',
       href: 'css/themes/' + skinTheme + '.css'
     });
+
+    window.ExpandControl = new ExpandControl();
 
     RegisterOverlayEvents();
     startOverlayEvents();

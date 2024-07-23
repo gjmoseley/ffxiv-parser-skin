@@ -54,7 +54,6 @@ ol {
 #overlay #header-template {
   display: block;
   height: 44px;
-  background: rgba(28, 32, 36, 0.9);
   padding: 7px;
   padding-left: 10px;
   padding-right: 10px;
@@ -117,16 +116,12 @@ ol {
 }
 
 #overlay #combatant-template {
-  display: initial;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  padding-top: 3px;
   padding-bottom: 5px;
-}
-
-#combatant-template:nth-child(2) {
-  padding-top: 5px;
 }
 
 #combatant-template:nth-last-child(1) {
@@ -156,6 +151,7 @@ ol {
 .job-icon img {
   height: 20px;
   display: inline-block;
+  vertical-align: bottom;
   margin-right: 3px;
 }
 
@@ -166,7 +162,7 @@ ol {
 }
 
 .stats {
-  font-weight: 600;
+  font-weight: bold;
 }
 
 .stat-prefix {
@@ -186,7 +182,7 @@ ol {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  font-weight: 800;
+  font-weight: bold;
   text-transform: uppercase;
   position: absolute;
   top: -3px;
@@ -219,7 +215,7 @@ ol {
   padding-left: 2px;
 }
 
-.more-collapsed #more-details{
+.more-collapsed #more-details {
   display: none;
   height: 0;
 }
@@ -246,8 +242,6 @@ ol {
 }
 
 .menu {
-  background: #1c2023;
-  background: rgba(28, 32, 35, 0.9);
   box-shadow: 0 4px 5px 3px rgba(0, 0, 0, 0.2);
   border: 1px #2d2d30 solid;
   border-radius: 8px;
@@ -264,7 +258,6 @@ ol {
   cursor: pointer;
 }
 .menu-option:hover {
-  background: rgba(75, 86, 92, 0.85);
   border-radius: 8px;
 }
 

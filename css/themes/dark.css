@@ -5,8 +5,8 @@ The default theme. Use this as a template for creating new ones */
 .job-Tank .dps, .job-Tank .name, #header-template .job-Tank { color: #21B0E9; }
 .job-Heal .dps, .job-Heal .name, #header-template .job-Heal { color: #10C080; }
 .job-Dps  .dps, .job-Dps  .name, #header-template .job-Dps  { color: #D33C30; }
-.job-Tank .bar { background: linear-gradient(to right, rgb(71, 141, 247), rgb(86, 164, 206)); }
-.job-Heal .bar { background: linear-gradient(to right, #008558, rgb(30, 177, 60)); }
+.job-Tank .bar { background: linear-gradient(to right, #478DF7, #56A4CE); }
+.job-Heal .bar { background: linear-gradient(to right, #008558, #1EB13C); }
 .job-Dps  .bar { background: linear-gradient(to right, #8F1F16, #CC3333); }
 /* Default colurs used for other roles (such as Chocobos) */
 .dps, .name, .bar { color: #AAA; }
@@ -49,6 +49,11 @@ ol {
     color: #2994F7;
 }
 
+/* Header background colour */
+#overlay #header-template {
+    background: rgba(28, 32, 36, 0.9);
+}
+
 /* Non-DPS stat text colour */
 .stats {
     color: #CDE8FF;
@@ -79,11 +84,17 @@ ol {
 }
 
 /* Separator border when expanded */
-#more-details {
+#combatant-template:not(.more-collapsed) {
     border-bottom: 1px dashed rgba(66, 65, 65, 0.6);
 }
 
-/* Context menu text colour */
+/* Context menu colours */
 .menu {
     color: #FFF;
+    background: #1c2023;
+    background: rgba(28, 32, 35, 0.9);
+    border: 1px #2d2d30 solid;
+}
+.menu-option:hover {
+  background: rgba(75, 86, 92, 0.85);
 }

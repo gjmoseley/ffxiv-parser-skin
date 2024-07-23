@@ -44,6 +44,3 @@ class ExpandControl {
     return this.expandList.has(name);
   }
 }
-
-// It's global, but meh.
-var EXPANDED = new ExpandControl();

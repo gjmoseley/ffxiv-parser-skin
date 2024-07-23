@@ -12,6 +12,8 @@ const toPercent = (num, divisor) => {
 
 const jobOrName = combatant => {
   combatant.JobOrName = combatant.Job || combatant.name;
+
+  /* EW: This might not be needed anymore */
   let egiSearch = combatant.JobOrName.indexOf("-Egi (");
   if (egiSearch != -1) {
     combatant.JobOrName = combatant.JobOrName.substring(0, egiSearch);

@@ -2,15 +2,16 @@ const classes = {
     // Name: Role
     "Gla": "Tank",
     "Mrd": "Tank",
-    "Pld": "Tank",
-    "War": "Tank",
     "Drk": "Tank",
     "Gnb": "Tank",
+    "Pld": "Tank",
+    "War": "Tank",
     
     "Cnj": "Heal",
-    "Whm": "Heal",
-    "Sch": "Heal",
     "Ast": "Heal",
+    "Sch": "Heal",
+    "Whm": "Heal",
+    "Sge": "Heal",
     
     "Acn": "Dps",
     "Arc": "Dps",
@@ -25,9 +26,12 @@ const classes = {
     "Mch": "Dps",
     "Mnk": "Dps",
     "Nin": "Dps",
+    "Pct": "Dps",
     "Rdm": "Dps",
+    "Rpr": "Dps",
     "Sam": "Dps",
     "Smn": "Dps",
+    "Vpr": "Dps",
     
     "Blu": "Dps"
 };
