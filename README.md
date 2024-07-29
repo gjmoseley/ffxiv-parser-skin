@@ -26,8 +26,8 @@ Free for personal use. Non-commercial.
 You may not use the material for commercial purposes.
 
 # Core features
-A stylish design making ample use of the job colours as at-a-glance info.
-Coloured Job/Class icons.
-Death count turns red when someone has died.
-Combatants can be expanded with the + button at the end of each row to display a few additional stats.
-Context menu option to end or clear the encounter.
+- A stylish design making ample use of the job colours as at-a-glance info.
+- Coloured Job/Class icons.
+- Death count turns red when someone has died.
+- Combatants can be expanded with the + button at the end of each row to display a few additional stats.
+- Context menu option to end or clear the encounter.
